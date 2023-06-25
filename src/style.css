@@ -1,0 +1,147 @@
+:root {
+  font-size: 62.5%;
+
+  --white: #fff;
+  --brand-primary: #b52184;
+  --brand-secondary: #312d64;
+  --gradiant-primary: #343193;
+  --gradiant-secondary: #302c63;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Mulish, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 0 3.2rem 9.2rem;
+}
+
+header > h1 {
+  margin-bottom: 0.5rem;
+
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: var(--brand-primary);
+}
+
+header > p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--brand-secondary);
+}
+
+#cards {
+  padding: 5.3rem 2.6rem;
+  background: linear-gradient(
+    134deg,
+    var(--gradiant-primary) 0%,
+    var(--gradiant-secondary) 100%
+  );
+}
+
+.card {
+  padding: 2.65rem;
+  border-radius: 2rem;
+  background: var(--white);
+}
+
+.card + .card {
+  margin-top: 5rem;
+}
+
+.card > h2 {
+  margin-bottom: 2rem;
+  color: var(--brand-primary);
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+
+.card > p {
+  color: var(--brand-secondary);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#contact {
+  padding: 8rem 4rem 6.4rem;
+}
+
+#contact-form > fieldset {
+  border: none;
+}
+
+#contact-form > button[type="submit"] {
+  padding: 1.6rem;
+  border: none;
+  border-radius: 1.6rem;
+  background: linear-gradient(
+    134deg,
+    var(--gradiant-primary) 0%,
+    var(--gradiant-secondary) 100%
+  );
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-transform: capitalize;
+}
+
+#contact-fields > legend {
+  margin-bottom: 4.2rem;
+  color: var(--brand-primary);
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+#contact-fields > label {
+  display: none;
+}
+
+#contact-fields > textarea {
+  resize: none;
+  min-height: 9rem;
+}
+
+#contact-fields > input,
+#contact-fields > textarea {
+  border: 1.5px solid var(--brand-secondary);
+  border-radius: 1.6rem;
+  padding: 1.2rem 1.6rem;
+  width: 100%;
+  max-width: 34.8rem;
+}
+
+#contact-fields > input,
+#contact-fields > input::placeholder,
+#contact-fields > textarea,
+#contact-fields > textarea::placeholder {
+  color: var(--brand-secondary);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+#contact-fields > input,
+#contact-fields > textarea {
+  margin-bottom: 2.4rem;
+}
+
+footer {
+  padding: 3.2rem 1.6rem;
+  background: linear-gradient(
+    134deg,
+    var(--gradiant-primary) 0%,
+    var(--gradiant-secondary) 100%
+  );
+}
+
+footer > p {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
