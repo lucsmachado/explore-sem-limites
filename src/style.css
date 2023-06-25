@@ -20,7 +20,13 @@ header {
   padding: 0 3.2rem 9.2rem;
 }
 
+header > #astronaut {
+  width: 100%;
+  max-width: 34.8rem;
+}
+
 header > h1 {
+  margin-top: 1.6rem;
   margin-bottom: 0.5rem;
 
   font-size: 3.2rem;
@@ -32,6 +38,10 @@ header > p {
   font-size: 2rem;
   font-weight: 600;
   color: var(--brand-secondary);
+}
+
+header > #arrow-down {
+  margin-top: 3.5rem;
 }
 
 #cards {
@@ -47,6 +57,8 @@ header > p {
   padding: 2.65rem;
   border-radius: 2rem;
   background: var(--white);
+  box-shadow: 0px 3.3107693195343018px 13.243077278137207px 0px
+    rgba(0, 0, 0, 0.25);
 }
 
 .card + .card {
@@ -54,6 +66,7 @@ header > p {
 }
 
 .card > h2 {
+  margin-top: 3.2rem;
   margin-bottom: 2rem;
   color: var(--brand-primary);
   font-size: 2.8rem;
@@ -98,36 +111,47 @@ header > p {
 }
 
 #contact-fields > label {
-  display: none;
-}
-
-#contact-fields > textarea {
-  resize: none;
-  min-height: 9rem;
-}
-
-#contact-fields > input,
-#contact-fields > textarea {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
   border: 1.5px solid var(--brand-secondary);
   border-radius: 1.6rem;
   padding: 1.2rem 1.6rem;
   width: 100%;
   max-width: 34.8rem;
+  height: auto;
 }
 
-#contact-fields > input,
-#contact-fields > input::placeholder,
-#contact-fields > textarea,
-#contact-fields > textarea::placeholder {
+#contact-fields > label > span {
+  display: none;
+}
+
+#contact-fields textarea {
+  resize: none;
+  min-height: 9rem;
+}
+
+#contact-fields input,
+#contact-fields input::placeholder,
+#contact-fields textarea,
+#contact-fields textarea::placeholder {
   color: var(--brand-secondary);
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 100%;
 }
 
-#contact-fields > input,
-#contact-fields > textarea {
-  margin-bottom: 2.4rem;
+#contact-fields input,
+#contact-fields textarea {
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#contact-fields input:focus-visible,
+#contact-fields textarea:focus-visible {
+  outline: none;
 }
 
 footer {

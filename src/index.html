@@ -15,12 +15,23 @@
   </head>
   <body>
     <header>
+      <img
+        id="astronaut"
+        src="/public/assets/astronaut.png"
+        alt="Ilustração de um astronauta flutuando pelo espaço, planetas coloridos ao fundo."
+      />
       <h1>Explore sem limites</h1>
       <p>Porque o aprendizado é contínuo</p>
+      <img
+        id="arrow-down"
+        src="/public/assets/arrow_down.svg"
+        alt="Seta roxa apontando para baixo."
+      />
     </header>
     <main>
       <section id="cards">
         <div class="card">
+          <img src="/public/assets/moon_orange.png" alt="Planeta alaranjado" />
           <h2>Não pare nunca</h2>
           <p>
             Se você deseja ter sucesso nos estudos, é fundamental que você adote
@@ -29,6 +40,7 @@
           </p>
         </div>
         <div class="card">
+          <img src="/public/assets/moon_blue.png" alt="Planeta azulado" />
           <h2>Só volta</h2>
           <p>
             Se você parou ou perdeu o ritmo em alguma atividade ou projeto,
@@ -37,6 +49,7 @@
           </p>
         </div>
         <div class="card">
+          <img src="/public/assets/moon_pink.png" alt="Planeta cor de rosa" />
           <h2>Siga seu ritmo</h2>
           <p>
             Avançar pouco a pouco mantém progresso constante em objetivos,
@@ -51,20 +64,31 @@
           <fieldset id="contact-fields">
             <legend>Entre em contato</legend>
 
-            <label for="name">Seu nome</label>
-            <input type="text" id="name" placeholder="Seu nome" />
+            <label for="name">
+              <span>Seu nome</span>
+              <img
+                src="/public/assets/icon_person.svg"
+                alt="Silhueta de uma pessoa de gênero não especificado"
+              />
+              <input type="text" id="name" placeholder="Seu nome" />
+            </label>
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="E-mail" />
+            <label for="email">
+              <span>E-mail</span>
+              <img src="/public/assets/icon_email.svg" alt="Arroba" />
+              <input type="email" id="email" placeholder="E-mail" />
+            </label>
 
-            <label for="message">Digite sua mensagem aqui</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Digite sua mensagem aqui..."
-            ></textarea>
+            <label for="message">
+              <span>Digite sua mensagem aqui</span>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Digite sua mensagem aqui..."
+              ></textarea>
+            </label>
           </fieldset>
 
           <button type="submit">Enviar mensagem</button>
