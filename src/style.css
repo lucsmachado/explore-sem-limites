@@ -25,7 +25,7 @@ header > #astronaut {
   max-width: 34.8rem;
 }
 
-header > h1 {
+header h1 {
   margin-top: 1.6rem;
   margin-bottom: 0.5rem;
 
@@ -34,13 +34,13 @@ header > h1 {
   color: var(--brand-primary);
 }
 
-header > p {
+header p {
   font-size: 2rem;
   font-weight: 600;
   color: var(--brand-secondary);
 }
 
-header > #arrow-down {
+header #arrow-down {
   margin-top: 3.5rem;
 }
 
@@ -174,4 +174,56 @@ footer > p {
 }
 
 @media (min-width: 700px) {
+  header {
+    padding: 0 2.8rem 5rem 5rem;
+    text-align: start;
+    display: grid;
+    grid-template-areas: "text astronaut";
+  }
+
+  header > #astronaut {
+    grid-area: astronaut;
+    justify-self: flex-end;
+    max-width: 72rem;
+  }
+
+  header #header-content {
+    grid-area: text;
+    display: grid;
+    grid-template-rows: 1fr min-content;
+  }
+
+  header #arrow-down {
+    max-height: 10rem;
+    margin-top: 0;
+    align-self: flex-end;
+  }
+
+  header #header-text {
+    align-self: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    padding: 0 2.8rem 10.5rem 10.5rem;
+  }
+
+  header #header-text > h1 {
+    font-size: 4.8rem;
+  }
+
+  header #header-text > p {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header #header-text > h1 {
+    font-size: 5.8rem;
+  }
+
+  header #header-text > p {
+    font-size: 3.2rem;
+  }
 }
