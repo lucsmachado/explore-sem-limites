@@ -83,7 +83,19 @@ header #arrow-down {
 }
 
 #contact {
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  place-items: center;
+}
+
+#background-stars {
+  display: none;
+}
+
+#contact-form {
   padding: 8rem 4rem 6.4rem;
+  width: 100%;
+  max-width: 59.2rem;
 }
 
 #contact-form > fieldset {
@@ -118,11 +130,11 @@ header #arrow-down {
   align-items: center;
   gap: 1.2rem;
   margin-bottom: 2.4rem;
+  background-color: var(--white);
   border: 1.5px solid var(--brand-secondary);
   border-radius: 1.6rem;
   padding: 1.2rem 1.6rem;
   width: 100%;
-  max-width: 34.8rem;
   height: auto;
 }
 
@@ -210,6 +222,10 @@ footer > p {
   .card > p {
     font-size: 2rem;
   }
+
+  #contact-fields > legend {
+    font-size: 4.2rem;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -224,6 +240,11 @@ footer > p {
   header #header-text > p {
     font-size: 2.8rem;
   }
+
+  #contact-form {
+    box-sizing: content-box;
+    padding: 9.5rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -233,5 +254,24 @@ footer > p {
 
   header #header-text > p {
     font-size: 3.2rem;
+  }
+
+  #contact {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #background-stars {
+    display: block;
+    width: 100%;
+    max-width: 64.4rem;
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+}
+
+@media (min-width: 1400px) {
+  header {
+    display: grid;
+    place-content: center;
   }
 }
